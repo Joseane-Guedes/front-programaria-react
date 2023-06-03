@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import listaImg from '../assets/lista.svg'
+import listaImg from '../assets/4706239.jpg'
 import { Header } from './Header.jsx'
 import { Footer } from './Footer.jsx'
 
@@ -67,8 +67,8 @@ export function Content() {
   return (
     <>
       <Header
-        title='Mulheres em Tech Brasil'
-        subtitle='Conheça personalidades femininas que estão transformando a tecnologia no Brasil'
+        title='Women in Tech Brazil'
+        subtitle='Get to know female personalities who are transforming technology in Brazil!'
         image={listaImg}
       />
       <div className={styles.projectsContainer}>
@@ -94,34 +94,34 @@ export function Content() {
         </div>
       </div>
       <div >
-        <h2 className={styles.projectsTitle}>Cadastre uma rainha tech:</h2>
+        <h2 className={styles.projectsTitle}>Register a tech queen:</h2>
         <form  className={styles.form} onSubmit={handleCreateMessage}>
           <input 
             onChange={handleInputValueNome} 
-            placeholder="Digite o nome"
+            placeholder="Enter the name"
             value={nome}
             className={styles.formInput}
           />
           <textarea 
             onChange={handleInputValueImagem} 
-            placeholder="Digite o link da imagem"
+            placeholder="Enter the image link"
             value={imagem}
             className={styles.formTextArea}
           />
           <textarea 
             onChange={handleInputValueminibio} 
-            placeholder="Digite a minibiografia"
+            placeholder="Enter the mini biography"
             value={minibio}
             className={styles.formTextArea}
           />
           <textarea 
             onChange={handleInputValueCitacao} 
-            placeholder="Digite a citação"
+            placeholder="Enter the quote"
             value={citacao}
             className={styles.formTextArea}
           />
-          <button className={styles.formButton} type="submit">Enviar mensagem</button>
-          {success && <p>Cadastro realizado com sucesso.</p>}
+          <button className={styles.formButton} type="submit">Send message</button>
+          {success && <p>Registration successfully completed.</p>}
         </form>
       </div>
       <Footer />
