@@ -98,25 +98,25 @@ export function Content() {
         <form  className={styles.form} onSubmit={handleCreateMessage}>
           <input 
             onChange={handleInputValueNome} 
-            placeholder="Enter the name"
+            placeholder="Name"
             value={nome}
             className={styles.formInput}
           />
           <textarea 
             onChange={handleInputValueImagem} 
-            placeholder="Enter the image link"
+            placeholder="Link"
             value={imagem}
             className={styles.formTextArea}
           />
           <textarea 
             onChange={handleInputValueminibio} 
-            placeholder="Enter the mini biography"
+            placeholder="Mini biography"
             value={minibio}
             className={styles.formTextArea}
           />
           <textarea 
             onChange={handleInputValueCitacao} 
-            placeholder="Enter the quote"
+            placeholder="Quote"
             value={citacao}
             className={styles.formTextArea}
           />
